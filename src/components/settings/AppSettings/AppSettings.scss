@@ -1,0 +1,23 @@
+@import "../../../styles/mixins.scss";
+
+.appSettings {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 5px;
+  overflow-y: auto;
+  gap: 10px;
+
+  @include for-tablet {
+    padding: 25px;
+    padding-top: 5px;
+  }
+
+  &__block {
+    background-color: var(--white-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
